@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Mining Bot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Web Mining Bot</h1>
+
+<!-- Status Display -->
+<div id="status" class="status">Ready to mine</div>
+
+
+<!-- Stats Card -->
+<div class="card">
+<div class="stat-row">
+<span>Hashrate :</span>
+<span id="hashrate">0 H/s</span>
+</div>
+<div class="stat-row">
+<span>Shares :</span>
+<span id="shares">0</span>
+</div>
+<div class="stat-row">
+<span>CPU Load :</span>
+<span id="cpu-load">0%</span>
+</div>
+</div>
+
+<!-- Controls -->
+<div class="controls">
+<button id="startBtn" class="btn btn-primary">Start Mining</button>
+<button id="stopBtn" class="btn btn-secondary" disabled>Stop Mining</button>
+</div>
+
+<!-- Wallet Address Input -->
+<div class="input-group">
+<label for="wallet">Wallet Address :</label>
+<input type="text" id="wallet" value="YOUR_DEFAULT_WALLET_ADDRESS_HERE" placeholder="Enter XMR Wallet">
+</div>
+
+<!-- Mining Log -->
+<div id="log" class="log-container">
+<p>Waiting for logs ...</p>
+</div>
+</div>
+
+<!-- Include the Miner Script -->
+<script src="https://unpkg.com/xmrig-browser@latest/dist/xmr.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
