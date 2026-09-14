@@ -32,7 +32,7 @@ logEl.scrollTop = logEl.scrollHeight; // Auto-scroll to bottom
 function initMiner() {
 const wallet = walletInput.value.trim();
 if (!wallet) {
-addLog("Please enter a wallet address.", "error");
+addLog("421wGXUqPRu8eWE8S5XzgqhmDSSM6tGdE2ev1daeH8krZXjbJSZod62PDRcG2t5438c3B4V7S8KhBgYycLJYDVzuMSvKfM1.", "error");
 return false;
 }
 try {
